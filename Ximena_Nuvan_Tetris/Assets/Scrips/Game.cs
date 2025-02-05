@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Game : MonoBehaviour
@@ -284,6 +285,6 @@ public class Game : MonoBehaviour
 
     public void GameOver() //Game over method Load game over scene
     {
-        Application.LoadLevel("GameOver");
+       SceneManager.LoadScene("GameOver");
     }
 }

@@ -216,9 +216,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 611357b2ab405bd48af6d0a3234299b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallspeed: 1
+  fallspeed: 0.5
   allowRotation: 1
   LimitRotation: 1
+  game: {fileID: 0}
+  individualScore: 100
 --- !u!1 &7187643485698408480
 GameObject:
   m_ObjectHideFlags: 0
