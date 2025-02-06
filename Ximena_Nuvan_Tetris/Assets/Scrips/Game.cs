@@ -27,6 +27,7 @@ public class Game : MonoBehaviour
     public int ScoreTwoLines = 100;
     public int ScoreThreeLines = 300;
     public int ScoreFourLines = 1000;
+    public int SpecialScore = 300;
     
     /// Score Text
     /// </summary>
@@ -136,10 +137,22 @@ public class Game : MonoBehaviour
         {
             Destroy(grid[x, y].gameObject);
             grid[x, y] = null;
-                
+        }
+
+       
+    }
+    public void specialScore(int y )
+    {
+        foreach (Transform child in transform)
+        {
+            if (child.position.y == y && child.CompareTag("Special"))
+            {
+                currentScore += SpecialScore; // Extra Points 50
+                Debug.Log("Extra Bonus");
+            }
+
         }
     }
-
     public void MoveRowDown(int y)
     {
         for (int x =0;x < GridWidth; x++)
@@ -169,6 +182,7 @@ public class Game : MonoBehaviour
         {
             if (IsFullRowAt(y))
             {
+                specialScore(y);
                 DeleteMinoAt(y); //delete all the minos on that row
                 MoveAllRowDown(y + 1); //Move all rows down
                 --y; //Because that row is full Y dicrease

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5597703329372876884}
   m_Layer: 0
   m_Name: tetrisPieces-05 (6)
-  m_TagString: Untagged
+  m_TagString: Special
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: -252528369413500709}
   m_Layer: 0
   m_Name: TetrominoTExtra
-  m_TagString: Untagged
+  m_TagString: Special
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 611357b2ab405bd48af6d0a3234299b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallspeed: 0.1
+  fallspeed: 0.2
   allowRotation: 1
   LimitRotation: 0
   game: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 8362577156086399500}
   m_Layer: 0
   m_Name: tetrisPieces-05 (8)
-  m_TagString: Untagged
+  m_TagString: Special
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 1860125648102578064}
   m_Layer: 0
   m_Name: tetrisPieces-05 (5)
-  m_TagString: Untagged
+  m_TagString: Special
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
